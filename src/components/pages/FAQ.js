@@ -112,7 +112,7 @@ Constance Lemuria.
 //   },
 //   {
 //     text: 'Weddings',
-//     link:'/weddings',
+//     link:'/seychelles-wedding-resort',
 //     isActive: true,
 //   },
 // ]

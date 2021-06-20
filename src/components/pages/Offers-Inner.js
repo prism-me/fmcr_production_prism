@@ -23,7 +23,7 @@ const breadcrumbItems = [
   },
   {
     text: "Stay and Save With Fishermans Cove Resort",
-    link: "/offers-inner",
+    link: "/offer/spend-your-dream-vacation",
     isActive: true,
   },
 ];

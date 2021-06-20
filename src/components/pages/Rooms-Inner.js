@@ -152,7 +152,7 @@ let breadcrumbItems = [
   },
   {
     text: 'Rooms & Suites',
-    link: '/room-suites',
+    link: '/rooms-suites-seychelles',
     isActive: false,
   },
   {

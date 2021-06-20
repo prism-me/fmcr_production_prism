@@ -18,7 +18,7 @@ let navigationmenu = [
     id: 2,
     linkText: 'Dining',
     child: true,
-    link: "/dining",
+    link: "/fine-dining-seychelles",
     submenu: []
 
   },
@@ -26,13 +26,13 @@ let navigationmenu = [
     id: 3,
     linkText: 'Rooms and Suites',
     child: true,
-    link: "/room-suites",
+    link: "/rooms-suites-seychelles",
     submenu: []
 
   },
   {
     id: 4,
-    link: '/weddings',
+    link: '/seychelles-wedding-resort',
     linkText: 'Weddings',
     child: false,
   },
@@ -44,7 +44,7 @@ let navigationmenu = [
   },
   {
     id: 6,
-    link: '/sustainability',
+    link: '/seychelles-eco-resort ',
     linkText: 'Sustainability',
     child: false,
   },
@@ -62,13 +62,13 @@ let navigationmenu = [
   },
   {
     id: 9,
-    link: '/sustainability',
+    link: '/seychelles-eco-resort ',
     linkText: 'Sustainability',
     child: false,
   },
   {
     id: 10,
-    link: '/spa-wellness',
+    link: '/spa-resort-seychelles',
     linkText: 'Spa & Wellness',
     child: false,
   },
@@ -170,7 +170,7 @@ class Headertwo extends Component {
       navigationmenu = navigationmenu.map(x => {
         if (x.id == 2) {
           return {
-            ...x, submenu: [{ id: 101, link: '/dining', linkText: 'Restaurants & Bars' }, ...diningSubMenu]
+            ...x, submenu: [{ id: 101, link: '/fine-dining-seychelles', linkText: 'Restaurants & Bars' }, ...diningSubMenu]
           }
         } else {
           return x;
@@ -194,7 +194,7 @@ class Headertwo extends Component {
       navigationmenu = navigationmenu.map(x => {
         if (x.id == 3) {
           return {
-            ...x, submenu: [{ id: 101, link: '/room-suites', linkText: 'Rooms & Suites Types' }, ...roomsSubMenu]
+            ...x, submenu: [{ id: 101, link: '/rooms-suites-seychelles', linkText: 'Rooms & Suites Types' }, ...roomsSubMenu]
           }
         } else {
           return x;
@@ -375,7 +375,7 @@ class Headertwo extends Component {
                   <Link to="#" onClick={this.toggleDiningMenu}>Dining &nbsp; <i className={`far ${this.state.isDiningSubMenuOpen ? 'fa-minus' : 'fa-plus'}`} /></Link>
                   <div className={"sidebar-submenu collapse" + (this.state.isDiningSubMenuOpen ? ' show' : '')}>
                     <ul>
-                      <li key={"all"}><Link to={`/dining`}>{"Restaurant & Bars"}</Link></li>
+                      <li key={"all"}><Link to={`/fine-dining-seychelles`}>{"Restaurant & Bars"}</Link></li>
                       {
                         this.state.diningSubMenu?.map(x => (
                           <li key={x.id}><Link to={`/dining-inner/${x.id}`}>{x.post_name}</Link></li>
@@ -388,7 +388,7 @@ class Headertwo extends Component {
                   <Link to="#" onClick={this.toggleRoomMenu}>Rooms &amp; Suites &nbsp; <i className={`far ${this.state.isRoomSubMenuOpen ? 'fa-minus' : 'fa-plus'}`} /></Link>
                   <div className={"sidebar-submenu collapse" + (this.state.isRoomSubMenuOpen ? ' show' : '')}>
                     <ul>
-                      <li key={"all"}><Link to={`/room-suites`}>{"Rooms & Suites Types"}</Link></li>
+                      <li key={"all"}><Link to={`/rooms-suites-seychelles`}>{"Rooms & Suites Types"}</Link></li>
                       {
                         this.state.roomSubMenu?.map(x => (
                           <li key={x.id}><Link to={`/rooms-inner/${x.id}`}>{x.post_name}</Link></li>
@@ -397,11 +397,11 @@ class Headertwo extends Component {
                     </ul>
                   </div>
                 </li>
-                <li><Link to="/weddings">Weddings</Link></li>
+                <li><Link to="/seychelles-wedding-resort">Weddings</Link></li>
                 {/* <li><Link to="/offers">Offers</Link></li> */}
                 <li><Link to="/whats-on">Leisure Activities</Link></li>
-                <li><Link to="/sustainability">Sustainability</Link></li>
-                <li><Link to="/spa-wellness">Spa &amp; Wellness</Link></li>
+                <li><Link to="/seychelles-eco-resort ">Sustainability</Link></li>
+                <li><Link to="/spa-resort-seychelles">Spa &amp; Wellness</Link></li>
                 <li><Link to="/about-seychelles">About Seychelles</Link></li>
                 <li><Link to="/offers">Offers</Link></li>
                 <li><Link to="/gallery">Gallery</Link></li>

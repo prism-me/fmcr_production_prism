@@ -59,16 +59,16 @@ class Footertwo extends Component {
 
                       <li><Link to="/about">About Us</Link></li>
                         
-                        <li><Link to="/weddings">Weddings </Link></li>
+                        <li><Link to="/seychelles-wedding-resort">Weddings </Link></li>
                         
-                        <li><Link to="/room-suites">Rooms &amp; Suites</Link></li>
-                        <li><Link to="/sustainability">Sustainability</Link></li>
+                        <li><Link to="/rooms-suites-seychelles">Rooms &amp; Suites</Link></li>
+                        <li><Link to="/seychelles-eco-resort ">Sustainability</Link></li>
                         <li><Link to="/whats-on">Leisure Activities </Link></li>
-                        <li><Link to="/dining">Dining</Link></li>
+                        <li><Link to="/fine-dining-seychelles">Dining</Link></li>
                         
 
                         <li><Link to="/gallery">Media Center</Link></li>
-                        <li><Link to="/spa-wellness">Spa</Link></li>
+                        <li><Link to="/spa-resort-seychelles">Spa</Link></li>
                         <li><Link to="/faq">FAQs</Link></li>
                         <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                         <li><Link to="/cancellation-policy">Cancellation Policy</Link></li>

@@ -20,7 +20,7 @@ const OffersInnerMainBlock = (props) => {
               className="text-left mb-2 mr-sm-4"
               style={{ fontSize: "20px", fontWeight: 600 }}
             >
-              Stay and Save With Fishermans Cove  Resort + Dinner For Two
+              Stay and Save With Fishermans Cove Resort + Dinner For Two
             </p>
             <p className="text-justify mb-2">
               Offering countless experiences throughout the journey, Fishermans
@@ -34,9 +34,9 @@ const OffersInnerMainBlock = (props) => {
               dinner for two at Le Cardinal Restaurant.
             </p>
             {/* <h6 className="mv"> */}
-              {/* All for AED 4000/- only
+            {/* All for AED 4000/- only
               <br /> */}
-              {/* <small>Terms &amp; Conditions applied.</small>
+            {/* <small>Terms &amp; Conditions applied.</small>
             </h6> */}
             {/* <div className="share-block">
               <p>Share with friends and family</p>
@@ -60,11 +60,13 @@ const OffersInnerMainBlock = (props) => {
               <div className="contact-links">
                 <div>
                   <i className="fas fa-phone pr-2"></i>
-                  <span>+248 467 7000</span>
+                  <a href="tel:+2484677000">+248 467 7000</a>
                 </div>
                 <div className="pl-md-4">
                   <i className="fas fa-envelope pr-2"></i>
-                  <span>reservations@fishermanscove-resort.com</span>
+                  <a href="mailto:reservations@fishermanscove-resort.com">
+                    reservations@fishermanscove-resort.com
+                  </a>
                 </div>
               </div>
             </div>

@@ -22,7 +22,7 @@ const breadcrumbItems = [
   },
   {
     text: "Sustainability",
-    link: "/sustainability",
+    link: "/seychelles-eco-resort ",
     isActive: true,
   },
 ];

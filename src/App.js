@@ -91,17 +91,17 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route exact path='/' render={(props) => <Hometwo {...props} isMobile={isMobile} isTop={isTop} />} />
-          <Route path='/room-suites' render={(props) => <RoomSuites {...props} isMobile={isMobile} isTop={isTop} />} />
-          <Route path='/dining' render={(props) => <Dining {...props} isMobile={isMobile} isTop={isTop} />} />
+          <Route path='/rooms-suites-seychelles' render={(props) => <RoomSuites {...props} isMobile={isMobile} isTop={isTop} />} />
+          <Route path='/fine-dining-seychelles' render={(props) => <Dining {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/dining-inner/:id' render={(props) => <DiningInner key={props.match.params.id} {...props} isMobile={isMobile} isTop={isTop} />} />
-          <Route path='/offers-inner' render={(props) => <OffersInner {...props} isMobile={isMobile} isTop={isTop} />} />
+          <Route path='/offer/spend-your-dream-vacation' render={(props) => <OffersInner {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/rooms-inner/:id' render={(props) => <RoomsInner key={props.match.params.id}  {...props} isMobile={isMobile} isTop={isTop} />} />
-          <Route path='/weddings' render={(props) => <Wedding {...props} isMobile={isMobile} isTop={isTop} />} />
+          <Route path='/seychelles-wedding-resort' render={(props) => <Wedding {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/whats-on' render={(props) => <Leisure {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/leisure-inner' render={(props) => <LeisureInner {...props} isMobile={isMobile} isTop={isTop} />} />
-          <Route path='/sustainability' render={(props) => <Sustainability {...props} isMobile={isMobile} isTop={isTop} />} />
+          <Route path='/seychelles-eco-resort ' render={(props) => <Sustainability {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/about-seychelles' render={(props) => <AboutSeychelles {...props} isMobile={isMobile} isTop={isTop} />} />
-          <Route path='/spa-wellness' render={(props) => <SpaWellness {...props} isMobile={isMobile} isTop={isTop} />} />
+          <Route path='/spa-resort-seychelles' render={(props) => <SpaWellness {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/about' render={(props) => <About {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/gallery' render={(props) => <GalleryMain {...props} isMobile={isMobile} isTop={isTop} />} />
           <Route path='/offers' render={(props) => <Offers {...props} isMobile={isMobile} isTop={isTop} />} />

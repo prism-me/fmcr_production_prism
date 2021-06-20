@@ -67,7 +67,7 @@ const breadcrumbItems = [
   },
   {
     text: "Dining",
-    link: "/dining",
+    link: "/fine-dining-seychelles",
     isActive: true,
   },
 ];
@@ -93,11 +93,11 @@ class Dining extends Component {
       <div className="bg-white">
         <Helmet>
           <title>
-            Best Beach Resorts in Seychelles | Fishermans Cove Resort
+          Restaurants in Seychelles Mahe | Fishermans Cove Resort
           </title>
           <meta
             name="description"
-            content="Situated at Beau Vallon Beach, Fishermans Cove Resort is one of the best resorts in Seychelles offering countless unforgettable experiences throughout your discovery"
+            content="The resort has two of the best restaurants and bars in Seychelles that allow you to savor scrumptious flavors while enjoying the Indian Ocean’s spectacular sunset."
           />
         </Helmet>
         <Headertwo

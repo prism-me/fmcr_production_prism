@@ -21,7 +21,7 @@ const breadcrumbItems = [
   },
   {
     text: "Spa & Wellness",
-    link: "/spa-wellness",
+    link: "/spa-resort-seychelles",
     isActive: true,
   },
 ];

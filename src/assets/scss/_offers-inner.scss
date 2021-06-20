@@ -108,6 +108,9 @@
         align-items: center;
         margin-top: 0.5rem;
         color: $eden;
+        a{
+          color: inherit;
+        }
         @media #{$sm} {
           div {
             width: 100%;

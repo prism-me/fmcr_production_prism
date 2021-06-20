@@ -22,7 +22,7 @@ import { Helmet } from "react-helmet";
 //   },
 //   {
 //     text: 'Dining',
-//     link:'/dining',
+//     link:'/fine-dining-seychelles',
 //     isActive: true,
 //   },
 // ]
@@ -185,7 +185,7 @@ let breadcrumbItems = [
   },
   {
     text: "Dining",
-    link: "/dining",
+    link: "/fine-dining-seychelles",
     isActive: false,
   },
   {
@@ -232,10 +232,10 @@ class DiningInner extends Component {
   render() {
     return (
       <div className="bg-white dining-inner-wrapper">
-        {this.state.singleHotel?.id == 15 ? (
+        {this.state.singleHotel?.id ? (
           <Helmet>
             <title>
-              Restaurants in Seychelles Mahe | Fishermans Cove Resort
+              {`${this.state.singleHotel?.post_name} | Fishermans Cove Resort`}
             </title>
             <meta
               name="description"
