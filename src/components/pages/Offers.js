@@ -87,11 +87,11 @@ class Offers extends Component {
       <div className="bg-white">
         <Helmet>
           <title>
-            Best Beach Resorts in Seychelles | Fishermans Cove Resort
+          Fishermans Cove offers The Best Resort Deals for Seychelles
           </title>
           <meta
             name="description"
-            content="Situated at Beau Vallon Beach, Fishermans Cove Resort is one of the best resorts in Seychelles offering countless unforgettable experiences throughout your discovery"
+            content="Fishermans Cove Resort is a veritable paradise that offers countless amazing experiences throughout the journey with some of the best resort deals in Seychelles."
           />
         </Helmet>
         <Headertwo

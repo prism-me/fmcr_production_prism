@@ -33,11 +33,11 @@ class Sustainability extends Component {
       <div className="bg-white sustainability-wrapper">
         <Helmet>
           <title>
-            Best Beach Resorts in Seychelles | Fishermans Cove Resort
+          Fishermans Cove Resort| An Eco Friendly Resort in Seychelles 
           </title>
           <meta
             name="description"
-            content="Situated at Beau Vallon Beach, Fishermans Cove Resort is one of the best resorts in Seychelles offering countless unforgettable experiences throughout your discovery"
+            content="Fishermans Cove Resort is an eco friendly resort built upon the principle of protecting the environment and moving forward towards a better and sustainable future."
           />
         </Helmet>
         <Headertwo
