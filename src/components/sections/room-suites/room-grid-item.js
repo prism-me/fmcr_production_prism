@@ -23,7 +23,11 @@ const RoomGridItem = (props) => {
           <p dangerouslySetInnerHTML={{ __html: props.description }}></p>
           <button
             className="main-btn btn-filled"
-            onClick={() => window.gtag_report_conversion(props.url)}
+            onClick={(e) => {
+                e.preventDefault();
+                window.gtag_report_conversion(props.url,true)
+            }
+            }
           >
             Check Availability
           </button>

@@ -37,10 +37,12 @@ const BottomNavigator = () => {
         </Link>
         <a href="#">
           <EventRounded
-            onClick={() =>
+            onClick={(e) => {
+              e.preventDefault();
               window.gtag_report_conversion(
-                "https://be.synxis.com/?&chain=27304&hotel=31842&locale=en-GB"
+                  "https://be.synxis.com/?&chain=27304&hotel=31842&locale=en-GB"
               )
+            }
             }
           />
         </a>

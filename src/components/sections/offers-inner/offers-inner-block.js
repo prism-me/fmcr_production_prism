@@ -74,10 +74,12 @@ const OffersInnerMainBlock = (props) => {
             <div className="mt-4">
               <Link
                 to="#"
-                onClick={() =>
+                onClick={(e) => {
+                  e.preventDefault();
                   window.gtag_report_conversion(
-                    "https://be.synxis.com/?Hotel=31842&Chain=27304&promo=LeCardinal"
+                      "https://be.synxis.com/?Hotel=31842&Chain=27304&promo=LeCardinal"
                   )
+                }
                 }
                 className="btn btn-eden main-btn mx-auto d-inline-block"
               >

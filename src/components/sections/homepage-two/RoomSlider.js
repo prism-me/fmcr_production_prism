@@ -55,7 +55,10 @@ const RoomSlider = (props) => {
               ></div>
               <button
                 className="main-btn btn-eden my-4"
-                onClick={() => window.gtag_report_conversion(x.post_url)}
+                onClick={(e) => {
+                    e.preventDefault();
+                    window.gtag_report_conversion(x.post_url,true)
+                }}
               >
                 BOOK NOW
               </button>

@@ -1,8 +1,13 @@
 /*=======  BOOKING FORM  =======*/
 
 input[type="date"]::after{
-	content: "\01F4C5";
-	color:"black";
+	//content: "\01F4C5";
+	content: "\f073";
+	background: none;
+	display: block;
+	font-family: 'FontAwesome';
+	width: 15px;
+	height: 20px;
 }
 
 input[type="date"]{
