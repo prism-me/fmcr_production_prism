@@ -108,7 +108,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         var callback = function () {
           if (typeof url != "undefined") {
             // window.location = url;
-            window.open(url, "_blank") || window.location.replace(url);
+          window.location.replace(url);
           }
         };
         gtag("event", "conversion", {

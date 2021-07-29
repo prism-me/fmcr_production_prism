@@ -1,4 +1,26 @@
 /*=======  BOOKING FORM  =======*/
+
+input[type="date"]::after{
+	content: "\01F4C5";
+	color:"black";
+}
+
+input[type="date"]{
+position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+	background:transparent;
+	bottom:0;
+	width:auto;
+	height:auto;
+	position: absolute;
+	color:transparent;
+	left: 0;
+	top:0;
+	right:0;
+  }
+
 .booking-form {
 	position: relative;
 	margin-top: -110px;
