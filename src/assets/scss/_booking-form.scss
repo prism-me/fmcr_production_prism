@@ -1,13 +1,13 @@
 /*=======  BOOKING FORM  =======*/
 
 input[type="date"]::after{
-	//content: "\01F4C5";
-	content: "\f073";
-	background: none;
-	display: block;
-	font-family: 'FontAwesome';
-	width: 15px;
-	height: 20px;
+	background-image: url(../img/c.png);
+	content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 15px;
 }
 
 input[type="date"]{
@@ -155,6 +155,9 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     margin: -3rem auto .5rem auto;
 	@media #{$sm} {
 		// margin-top: -85px;
+	}
+	@media #{$md}{
+		max-width: 960px;
 	}
 	background-color: rgba($color: $heading-color, $alpha: 1);
 	.booking-form-inner {
@@ -349,3 +352,5 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 		border:2px solid $primary-color;
 	}
 }
+
+

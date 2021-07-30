@@ -30,7 +30,15 @@ class Bookingform extends Component {
     }
 
     handleCheckInChange = (e) => {
-        this.setState({ checkIn: e.target.value })
+        
+        let today = e.target.value; 
+        let n = 1;
+        let fudate = new Date(new Date(today).setDate(new Date(today).getDate() + n));
+        fudate = fudate.getFullYear() +  '-' + (fudate.getMonth() + 1) + '-' + fudate.toDateString().substring(8, 10) ;
+        this.setState({checkOut: fudate });
+        this.setState({  checkOut: fudate , checkIn: e.target.value  });
+        console.log(this.state.checkOut);
+        debugger;
     }
     handleCheckOutChange = (e) => {
         this.setState({ checkOut: e.target.value })
@@ -69,7 +77,7 @@ class Bookingform extends Component {
         const { rooms, childs, adults, showCountPopup, showPromoPopup } = this.state;
         return (
             <section className="booking-form-hotizontal container d-none d-sm-block">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="booking-form-inner">
                         <div className="row">
                             <div className="col-12 col-md-4">

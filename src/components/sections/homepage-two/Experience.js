@@ -5,17 +5,17 @@ import ReactWOW from 'react-wow'
 
 const data = [
     {
-        image: require('../../../assets/img/experience/sustaniablity.webp'),
+        image: require('../../../assets/img/experience/sustaniablity.jpg'),
         title: "Sustainability",
         link:'/seychelles-eco-resort '
     },
     {
-        image: require('../../../assets/img/experience/overview.webp'),
+        image: require('../../../assets/img/experience/overview.jpg'),
         title: "Overview of the Resort",
         link:'/about'
     },
     {
-        image: require('../../../assets/img/experience/seychelles-min.webp'),
+        image: require('../../../assets/img/experience/seychelles-min.jpg'),
         title: "About Seychelles",
         link:'/about-seychelles'
     },

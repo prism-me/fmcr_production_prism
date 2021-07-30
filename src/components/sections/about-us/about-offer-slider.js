@@ -32,10 +32,12 @@ const AboutOfferSlider = (props) => {
         {
           props.data?.map(x => (
             <div>
+            <a href={x.route} className="about-link-wrapper"> 
               <div className="about-slider-item" style={{ backgroundImage: `url(${x.thumbnail})`, backgroundPosition:'center', backgroundSize:'cover' }}>
                 <h3>{x.post_name}</h3>
                 <div className="slide-hover-overlay"></div>
               </div>
+              </a>
             </div>
           ))
         }
