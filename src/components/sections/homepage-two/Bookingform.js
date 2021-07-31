@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 const year = `${new Date().getFullYear()}`;
 const month = (new Date().getMonth() + 1).toString().length === 1 ? `0${new Date().getMonth() + 1}` : `${new Date().getMonth() + 1}`;
 const day = (new Date().getDate()).toString().length === 1 ? `0${new Date().getDate()}` : `${new Date().getDate()}`;
@@ -11,7 +10,7 @@ class Bookingform extends Component {
         super(props);
         this.state = {
             checkIn: `${year}-${month}-${day}`,
-            checkOut: `${year}-${month}-${day2}`,
+            checkOut: `${year}-${month}-${day}`,
             adults: 1,
             rooms: 1,
             childs: 0,
@@ -122,9 +121,9 @@ class Bookingform extends Component {
                         <div className="row">
                             <div className="col-12 col-md-4">
                                 <div className="dates-group">
-                                    <input onChange={this.dateChange} type="date" value={this.state.checkIn} className="form-control" placeholder="Check In" ></input>
+                                    <input onChange={this.dateChange} type="date" value={this.state.checkIn} className="form-control" placeholder="Check In" min={this.state.checkIn}></input>
                                     <span className="d-none d-sm-block">-</span>
-                                    <input onChange={this.handleCheckOutChange} type="date" value={this.state.checkOut} className="form-control" placeholder="Check Out" ></input>
+                                    <input onChange={this.handleCheckOutChange} type="date" value={this.state.checkOut} min={this.state.checkOut} className="form-control" placeholder="Check Out" ></input>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4">
