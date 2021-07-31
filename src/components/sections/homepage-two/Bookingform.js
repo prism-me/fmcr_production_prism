@@ -23,23 +23,63 @@ class Bookingform extends Component {
         }
         this.wrapperRef = React.createRef();
         this.propmoWrapperRef = React.createRef();
-        
+
         // this.setWrapperRef = this.setWrapperRef.bind(this);
         this.handleClickOutside = this.handleClickOutside.bind(this);
 
     }
+     dateChange = (e) => {
+        let cur = e.target.value;
+        console.log(cur);
 
-    handleCheckInChange = (e) => {
-        
-        let today = e.target.value; 
-        let n = 1;
-        let fudate = new Date(new Date(today).setDate(new Date(today).getDate() + n));
-        fudate = fudate.getFullYear() +  '-' + (fudate.getMonth() + 1) + '-' + fudate.toDateString().substring(8, 10) ;
-        this.setState({checkOut: fudate });
-        this.setState({  checkOut: fudate , checkIn: e.target.value  });
-        console.log(this.state.checkOut);
-        debugger;
+        let newDate =  this.nextDate(cur);
+        console.log(newDate);
+         this.setState({  checkOut: newDate , checkIn: cur  });
+        // this.setState(newDate);    //updating state for check-out date
+
+
     }
+     nextDate(cur) {
+        var currentdate = new Date(cur);
+        let currMonth  = currentdate.getMonth()+1;
+        if(currMonth <= 9){
+            currMonth = '0' + currMonth;
+        }
+        console.log(currMonth);
+
+        let currDate  = currentdate.getDate();
+        if(currDate <= 9){
+            currDate = '0' + (currDate+1);
+        }
+        else{
+            currDate = currDate+1;
+        }
+
+        currDate = currDate.toString();
+        console.log(currDate);
+
+        var datetime =
+            currentdate.getFullYear() +
+            "-" +
+            (currMonth) +
+            "-" +
+            (currDate)
+         // this.setState({checkOut: datetime });
+         // this.setState({  checkOut: datetime , checkIn: cur.target.value  });
+        console.log(datetime);
+        return datetime;
+    }
+    // handleCheckInChange = (e) => {
+    //
+    //     let today = e.target.value;
+    //     let n = 1;
+    //     let fudate = new Date(new Date(today).setDate(new Date(today).getDate() + n));
+    //     fudate = fudate.getFullYear() +  '-' + (fudate.getMonth() + 1) + '-' + fudate.toDateString().substring(8, 10) ;
+    //     this.setState({checkOut: fudate });
+    //     this.setState({  checkOut: fudate , checkIn: e.target.value  });
+    //     // console.log(this.state.checkOut);
+    //     // debugger;
+    // }
     handleCheckOutChange = (e) => {
         this.setState({ checkOut: e.target.value })
     }
@@ -47,7 +87,7 @@ class Bookingform extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         const finalURL = `https://be.synxis.com/?adult=${this.state.adults}&arrive=${this.state.checkIn}&chain=${this.state.chain}&child=${this.state.childs}&currency=EUR&depart=${this.state.checkOut}&hotel=${this.state.hotel}&level=hotel&locale=en-US&rooms=${this.state.rooms}&promo=${this.state.promo}`;
-        
+
         window.gtag_report_conversion(finalURL);
         return;
         // window.open(finalURL, '_blank') || window.location.replace(finalURL);
@@ -82,7 +122,7 @@ class Bookingform extends Component {
                         <div className="row">
                             <div className="col-12 col-md-4">
                                 <div className="dates-group">
-                                    <input onChange={this.handleCheckInChange} type="date" value={this.state.checkIn} className="form-control" placeholder="Check In" ></input>
+                                    <input onChange={this.dateChange} type="date" value={this.state.checkIn} className="form-control" placeholder="Check In" ></input>
                                     <span className="d-none d-sm-block">-</span>
                                     <input onChange={this.handleCheckOutChange} type="date" value={this.state.checkOut} className="form-control" placeholder="Check Out" ></input>
                                 </div>
