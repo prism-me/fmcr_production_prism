@@ -206,9 +206,18 @@ class RoomsInner extends Component {
           <meta charSet="utf-8" />
           <title>
             {
-              this.state.singleRoom?.post_name || "Fishermans Cove Resort"
+              this.state.singleRoom?.meta_title || "Fishermans Cove Resort"
             }
           </title>
+          <meta 
+          
+          name="description" 
+          
+          content={this.state.singleRoom?.meta_description || "Fishermans Cove Resort" } 
+          
+          data-react-helmet="true"
+          
+          />
         </Helmet>
         {/* SEO TAG END  */}
 
