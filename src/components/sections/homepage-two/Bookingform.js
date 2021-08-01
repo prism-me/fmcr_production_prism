@@ -33,8 +33,10 @@ class Bookingform extends Component {
         console.log(cur);
 
         let newDate =  this.nextDate(cur);
+        let checkOutMin = newDate;
+
        // console.log(newDate);
-         this.setState({  checkOut: newDate , checkIn: cur  });
+         this.setState({  checkOut: newDate , checkIn: cur , checkOutMin : checkOutMin });
         // this.setState(newDate);    //updating state for check-out date
 
 
