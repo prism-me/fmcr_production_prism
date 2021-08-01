@@ -10,7 +10,7 @@ class Bookingform extends Component {
         super(props);
         this.state = {
             checkIn: `${year}-${month}-${day}`,
-            checkOut: `${year}-${month}-${day}`,
+            checkOut: `${year}-${month}-${day2}`,
             adults: 1,
             rooms: 1,
             childs: 0,
@@ -18,7 +18,8 @@ class Bookingform extends Component {
             showPromoPopup: false,
             chain: 27304,
             hotel: 31842,
-            promo: ''
+            promo: '',
+            checkOutMin:`${year}-${month}-${day2}`
         }
         this.wrapperRef = React.createRef();
         this.propmoWrapperRef = React.createRef();
@@ -121,9 +122,9 @@ class Bookingform extends Component {
                         <div className="row">
                             <div className="col-12 col-md-4">
                                 <div className="dates-group">
-                                    <input onChange={this.dateChange} type="date" value={this.state.checkIn} className="form-control" placeholder="Check In" min={this.state.checkIn}></input>
+                                    <input onChange={this.dateChange} type="date" value={this.state.checkIn} className="form-control" placeholder="Check In" min={new Date().toISOString().split('T')[0]}></input>
                                     <span className="d-none d-sm-block">-</span>
-                                    <input onChange={this.handleCheckOutChange} type="date" value={this.state.checkOut} min={this.state.checkOut} className="form-control" placeholder="Check Out" ></input>
+                                    <input onChange={this.handleCheckOutChange} type="date" value={this.state.checkOut} min={this.state.checkOutMin} className="form-control" placeholder="Check Out" ></input>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4">
