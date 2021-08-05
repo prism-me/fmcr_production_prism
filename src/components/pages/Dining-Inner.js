@@ -235,7 +235,7 @@ class DiningInner extends Component {
         {this.state.singleHotel?.id ? (
           <Helmet>
             <title>
-              {`${this.state.singleHotel?.meta_title} | Fishermans Cove Resort`}
+              {`${this.state.singleHotel?.post_name} | Fishermans Cove Resort`}
             </title>
             <meta
               name="description"

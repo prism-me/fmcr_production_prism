@@ -206,7 +206,7 @@ class RoomsInner extends Component {
           <meta charSet="utf-8" />
           <title>
             {
-              this.state.singleRoom?.meta_title || "Fishermans Cove Resort"
+              this.state.singleRoom?.post_name || "Fishermans Cove Resort"
             }
           </title>
           <meta 

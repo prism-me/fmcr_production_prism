@@ -93,7 +93,8 @@ class Dining extends Component {
       <div className="bg-white">
         <Helmet>
           <title>
-          Restaurants in Seychelles Mahe | Fishermans Cove Resort
+            Dining | Fishermans Cove Resort
+          {/*Restaurants in Seychelles Mahe | Fishermans Cove Resort*/}
           </title>
           <meta
             name="description"

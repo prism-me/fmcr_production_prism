@@ -87,7 +87,8 @@ class Offers extends Component {
       <div className="bg-white">
         <Helmet>
           <title>
-          Fishermans Cove offers The Best Resort Deals for Seychelles
+              Offers | Fishermans Cove Resort
+          {/*Fishermans Cove offers The Best Resort Deals for Seychelles*/}
           </title>
           <meta
             name="description"

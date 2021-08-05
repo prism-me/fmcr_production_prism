@@ -74,7 +74,8 @@ class AboutUs extends Component {
       <div className="bg-white about-us-wrapper">
         <Helmet>
           <title>
-            Best Beach Resorts in Seychelles | Fishermans Cove Resort
+              About | Fishermans Cove Resort
+            {/*Best Beach Resorts in Seychelles | Fishermans Cove Resort*/}
           </title>
           <meta
             name="description"

@@ -105,7 +105,8 @@ class LeisureInner extends Component {
       <div className="bg-white leisure-inner-wrapper">
         <Helmet>
           <title>
-            Best Beach Resorts in Seychelles | Fishermans Cove Resort
+            Other Resort Activities | Fishermans Cove Resort
+            {/*Best Beach Resorts in Seychelles | Fishermans Cove Resort*/}
           </title>
           <meta
             name="description"

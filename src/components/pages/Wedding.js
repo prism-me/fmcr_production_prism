@@ -114,7 +114,10 @@ class Wedding extends Component {
     return (
       <div className="bg-white">
         <Helmet>
-          <title>Beach Resort Wedding Venues | Fishermans Cove Resort </title>
+          <title>
+            Wedding Venues | Fishermans Cove Resort
+            {/*Beach Resort Wedding Venues | Fishermans Cove Resort */}
+          </title>
           <meta
             name="description"
             content="This spectacular venue at Fishermans Cove Resort resonates the unique natural and cultural diversity making it the pick of wedding venues in Seychelles"

@@ -33,7 +33,7 @@ class Sustainability extends Component {
       <div className="bg-white sustainability-wrapper">
         <Helmet>
           <title>
-          Fishermans Cove Resort| An Eco Friendly Resort in Seychelles 
+          Sustainability | An Eco Friendly Resort in Seychelles
           </title>
           <meta
             name="description"

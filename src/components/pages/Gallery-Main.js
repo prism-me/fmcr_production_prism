@@ -44,7 +44,8 @@ class GalleryMain extends Component {
       <div className="bg-white">
         <Helmet>
           <title>
-            Best Beach Resorts in Seychelles | Fishermans Cove Resort
+              Gallery | Fishermans Cove Resort
+            {/*Best Beach Resorts in Seychelles | Fishermans Cove Resort*/}
           </title>
           <meta
             name="description"
