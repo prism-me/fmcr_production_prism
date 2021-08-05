@@ -230,7 +230,7 @@ class RoomsInner extends Component {
         {/* BREADCRUMBS END */}
         <div className="container">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-8 left-image-section">
               {/*====== TITLE START ======*/}
               <RoomsInnerTitleBlock room={this.state.singleRoom} />
               {/*====== TITLE END ======*/}
@@ -241,7 +241,7 @@ class RoomsInner extends Component {
               <RoomVR360 image={this.state.singleRoom?.images360?.[0]?.avatar} />
               {/*====== ROOM 360 GRID END ======*/}
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 right-booking-section">
               <BookingFormVertical roomCode={this.state.singleRoom?.roomCode} />
             </div>
           </div>
